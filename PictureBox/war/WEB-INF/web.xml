@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>PictureBox</servlet-name>
+		<servlet-class>ie.mydit.belskis.tomas.PictureBoxServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PictureBox</servlet-name>
+		<url-pattern>/picturebox</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Upload</servlet-name>
+		<servlet-class>ie.mydit.belskis.tomas.Upload</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Upload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Serve</servlet-name>
+		<servlet-class>ie.mydit.belskis.tomas.Serve</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Serve</servlet-name>
+		<url-pattern>/serve</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DisplayImages</servlet-name>
+		<servlet-class>ie.mydit.belskis.tomas.DisplayImages</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DisplayImages</servlet-name>
+		<url-pattern>/display</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteImages</servlet-name>
+		<servlet-class>ie.mydit.belskis.tomas.DeleteImages</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteImages</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>display.html</welcome-file>
+	</welcome-file-list>
+</web-app>
